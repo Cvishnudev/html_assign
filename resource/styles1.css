@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+}
+
+:root {
+	--bg: rgb(75, 73, 73);
+	--bgg: rgb(255, 251, 251);
+	--footc: rgb(26, 26, 26);
+	--text-color: #908e8e;
+	--txtg: rgb(75, 73, 73);
+}
+
+body {
+	padding: 0 3rem;
+	background-color: var(--bg);
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 5rem;
+}
+
+/* Header CSS */
+#header,
+#footer {
+	box-shadow: 0px 0px 2px 2px rgba(240, 245, 238, 0.1);
+	padding: 1rem 0;
+}
+
+#header .page-heading {
+	color: var(--text-color);
+	margin-bottom: 1.25rem;
+}
+
+#header .navbar {
+	width: 100%;
+	background-color: var(--footc);
+	padding: 1rem;
+}
+
+#header .navbar .nav-link:not(:last-child) {
+	margin-right: 1rem;
+}
+
+#header .navbar .nav-text {
+	color: var(--text-color);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/* Main CSS */
+#main {
+	background-color: white;
+	padding: 1rem 0;
+}
+
+#main .main-img {
+	width: 100%;
+}
+
+#main .main-text-content {
+	background-color: var(--bgg);
+
+	padding: 0.5rem;
+	margin: 1rem 0;
+
+	border-radius: 4px;
+
+	color: var(--txtg);
+	text-align: justify;
+
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1.5;
+	letter-spacing: 2px;
+}
+
+/* Gallery CSS */
+#gallery-section {
+	margin-top: 2rem;
+}
+
+#gallery-section .heading {
+	color: var(--txtg);
+	text-transform: uppercase;
+	margin-bottom: 0.25rem;
+}
+
+#gallery-section .divider {
+	background-color: var(--bgg);
+	margin-bottom: 1rem;
+}
+
+#gallery-section .gallery {
+	display: flex;
+}
+
+#gallery-section .gallery .img-container {
+	border: 1px solid var(--txtg);
+	padding: 3px;
+	border-radius: 4px;
+	flex-basis: 25%;
+}
+
+#gallery-section .gallery .img-container:not(:last-child) {
+	margin-right: 8px;
+}
+
+#gallery-section .gallery .img-container img {
+	width: 100%;
+}
+
+#gallery-section .gallery .img-container .caption {
+	background-color: var(--bgg);
+	color: var(--txtg);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 0.5rem 0;
+}
+
+/* FOOTER CSS */
+
+#footer {
+	background-color: var(--footc);
+}
+
+#footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#footer .container p {
+	color: var(--text-color);
+	font-size: 10px;
+}
